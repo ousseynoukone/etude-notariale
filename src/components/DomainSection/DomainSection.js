@@ -16,7 +16,7 @@ export default function DomainSection({ domain, index, reversed = false }) {
             className={styles.photo}
           />
         </div>
-        <div className={styles.text}>
+        <div>
           <p className={styles.number} aria-hidden="true">
             {String(index + 1).padStart(2, '0')}
           </p>

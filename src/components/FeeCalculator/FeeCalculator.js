@@ -106,7 +106,7 @@ export default function FeeCalculator() {
         <p className={styles.hint}>Le calcul se met à jour à chaque modification.</p>
       </form>
 
-      <div className={styles.results}>
+      <div>
         {fees ? (
           <FeeBreakdown fees={fees} price={price} />
         ) : (

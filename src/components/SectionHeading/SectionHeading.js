@@ -1,15 +1,9 @@
 import { cx } from '@/lib/classNames'
 import styles from './SectionHeading.module.css'
 
-export default function SectionHeading({ eyebrow, title, id, children, tone, align }) {
+export default function SectionHeading({ eyebrow, title, id, children, tone }) {
   return (
-    <div
-      className={cx(
-        styles.heading,
-        tone === 'light' && styles.light,
-        align === 'center' && styles.center,
-      )}
-    >
+    <div className={cx(styles.heading, tone === 'light' && styles.light)}>
       {eyebrow && <p className={styles.eyebrow}>{eyebrow}</p>}
       <h2 id={id} className={styles.title}>
         {title}

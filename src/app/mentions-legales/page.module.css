@@ -1,0 +1,26 @@
+.notice {
+  margin-bottom: var(--space-7);
+  padding: var(--space-5) var(--space-6);
+  border-left: 3px solid var(--color-accent);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.noticeTitle {
+  margin-bottom: var(--space-3);
+  font-size: var(--text-xl);
+}
+
+.content h2 {
+  margin: var(--space-7) 0 var(--space-3);
+  color: var(--color-navy-900);
+  font-size: var(--text-xl);
+}
+
+.content h2:first-child {
+  margin-top: 0;
+}
+
+.content p {
+  max-width: 68ch;
+}

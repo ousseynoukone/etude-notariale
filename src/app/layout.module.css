@@ -1,0 +1,25 @@
+.skipLink {
+  position: absolute;
+  top: var(--space-2);
+  left: var(--space-2);
+  z-index: 100;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-navy-900);
+  color: var(--color-white);
+  font-weight: 600;
+  transform: translateY(-200%);
+}
+
+.skipLink:focus {
+  color: var(--color-white);
+  transform: none;
+}
+
+.main {
+  display: block;
+  min-height: 60vh;
+}
+
+.main:focus {
+  outline: none;
+}

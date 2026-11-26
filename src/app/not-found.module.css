@@ -1,0 +1,46 @@
+.notFound {
+  --color-focus: var(--color-brass-300);
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+  padding-block: var(--space-8);
+  overflow: hidden;
+  background: var(--color-navy-950);
+  color: rgb(244 239 230 / 0.86);
+}
+
+.photo {
+  object-fit: cover;
+  opacity: 0.35;
+}
+
+.content {
+  position: relative;
+}
+
+.code {
+  color: var(--color-brass-300);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.title {
+  max-width: 18ch;
+  color: var(--color-white);
+}
+
+.text {
+  max-width: 52ch;
+  margin-top: var(--space-5);
+  font-size: var(--text-lg);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}

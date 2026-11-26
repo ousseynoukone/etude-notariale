@@ -1,0 +1,17 @@
+.section {
+  padding-block: var(--space-section);
+}
+
+.plain {
+  background: var(--color-bg);
+}
+
+.tint {
+  background: var(--color-stone-100);
+}
+
+.dark {
+  --color-focus: var(--color-brass-300);
+  background: var(--color-navy-900);
+  color: rgb(244 239 230 / 0.86);
+}

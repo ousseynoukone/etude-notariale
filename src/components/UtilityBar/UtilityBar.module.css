@@ -1,0 +1,53 @@
+.bar {
+  --color-focus: var(--color-brass-300);
+  background: var(--color-navy-950);
+  color: rgb(244 239 230 / 0.82);
+  font-size: var(--text-xs);
+  letter-spacing: 0.02em;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2) var(--space-5);
+  min-height: 38px;
+}
+
+.address,
+.contact {
+  margin: 0;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.phone {
+  color: var(--color-brass-300);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.phone:hover {
+  color: var(--color-white);
+}
+
+@media (max-width: 900px) {
+  .hours {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .inner {
+    justify-content: center;
+  }
+
+  .address {
+    display: none;
+  }
+}

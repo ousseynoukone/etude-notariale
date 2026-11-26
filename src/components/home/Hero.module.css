@@ -25,7 +25,7 @@
       to top,
       rgb(14 21 38 / 0.92) 0%,
       rgb(14 21 38 / 0.55) 45%,
-      rgb(14 21 38 / 0.25) 100%
+      rgb(14 21 38 / 0.1) 100%
     ),
     linear-gradient(to right, rgb(14 21 38 / 0.55), transparent 70%);
 }

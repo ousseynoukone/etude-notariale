@@ -63,6 +63,7 @@
 
   .historyMedia {
     position: relative;
+    top: auto;
     aspect-ratio: 3 / 2;
   }
 

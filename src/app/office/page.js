@@ -39,7 +39,7 @@ export default function OfficePage() {
             >
               <p>
                 Quatre générations de notaires se sont succédé au 8 rue des Tanneurs.{' '}
-                {office.legalEntity} exerce aujourd’hui sur les trois niveaux de l’immeuble.
+                {office.legalEntity}, exerce aujourd’hui sur les trois niveaux de l’immeuble.
               </p>
             </SectionHeading>
             <Timeline milestones={milestones} />

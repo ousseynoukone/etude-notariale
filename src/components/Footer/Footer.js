@@ -62,12 +62,14 @@ export default function Footer() {
         </nav>
       </div>
 
-      <div className={`container ${styles.fineprint}`}>
-        <p>
-          Site fictif réalisé dans le cadre d’une étude de cas. L’office, les personnes et les
-          coordonnées sont imaginaires.
-        </p>
-        <p>Photographies : Unsplash</p>
+      <div className="container">
+        <div className={styles.fineprint}>
+          <p>
+            Site fictif réalisé dans le cadre d’une étude de cas. L’office, les personnes et les
+            coordonnées sont imaginaires.
+          </p>
+          <p>Photographies : Unsplash</p>
+        </div>
       </div>
     </footer>
   )

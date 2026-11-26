@@ -26,7 +26,7 @@ export const metadata = {
     default: office.name,
   },
   description:
-    'Office notarial Marceau, Lenglet & Brard, notaires associés à Valcourt-sur-Loire : immobilier, famille, successions, patrimoine et entreprise. Site fictif réalisé pour une étude de cas.',
+    'Office notarial Marceau, Lenglet & Brard, notaires associés à Valcourt-sur-Loire : immobilier, famille, successions, patrimoine et entreprise.',
 }
 
 export const viewport = {

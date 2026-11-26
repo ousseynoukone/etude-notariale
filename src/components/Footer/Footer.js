@@ -65,10 +65,8 @@ export default function Footer() {
       <div className="container">
         <div className={styles.fineprint}>
           <p>
-            Site fictif réalisé dans le cadre d’une étude de cas. L’office, les personnes et les
-            coordonnées sont imaginaires.
+            © {new Date().getFullYear()} {office.legalEntity}
           </p>
-          <p>Photographies : Unsplash</p>
         </div>
       </div>
     </footer>

@@ -101,8 +101,8 @@ alternatif en français.
 ## Contenu fictif
 
 Tout est inventé : l’office, les notaires, les collaborateurs, l’adresse (code postal 49999), les
-biens et les actualités. Les numéros de téléphone sont dans la tranche 01 99 00 xx xx réservée par
-l’Arcep à la fiction, les adresses e-mail utilisent le domaine réservé `.example`. Le formulaire de
+biens et les actualités. Les numéros de téléphone sont dans la tranche 02 61 91 xx xx réservée par
+l’Arcep à la fiction, et le domaine des adresses e-mail n’est pas enregistré. Le formulaire de
 rendez-vous n’envoie rien.
 
 Les photographies sont de vraies prises de vue publiées sur [Unsplash](https://unsplash.com) sous

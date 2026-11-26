@@ -8,7 +8,7 @@ import styles from './page.module.css'
 export const metadata = {
   title: 'Prendre rendez-vous',
   description:
-    'Demande de rendez-vous en trois étapes avec un notaire de l’office, à l’office ou en visioconférence. Démonstration : aucune donnée n’est envoyée.',
+    'Demande de rendez-vous en trois étapes avec un notaire de l’office, à l’office ou en visioconférence.',
 }
 
 const documents = [
@@ -29,11 +29,6 @@ export default function AppointmentPage() {
       />
 
       <Section>
-        <p className={styles.demoNotice}>
-          <strong>Site de démonstration.</strong> Le formulaire fonctionne, mais aucune demande
-          n’est transmise : les informations saisies restent dans votre navigateur.
-        </p>
-
         <div className={styles.grid}>
           <BookingFlow />
 

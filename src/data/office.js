@@ -9,8 +9,8 @@ export const office = {
     postalCode: '49999',
     city: 'Valcourt-sur-Loire',
   },
-  phone: '01 99 00 14 22',
-  email: 'accueil@marceau-lenglet.example',
+  phone: '02 61 91 14 22',
+  email: 'accueil@marceau-lenglet-notaires.fr',
   hoursSummary: 'Lundi – vendredi, 9 h – 12 h 30 et 14 h – 18 h (17 h le vendredi)',
   hours: [
     { days: 'Lundi au jeudi', time: '9 h – 12 h 30 · 14 h – 18 h' },

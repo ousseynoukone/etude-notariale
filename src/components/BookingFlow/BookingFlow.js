@@ -233,7 +233,7 @@ export default function BookingFlow() {
           />
           <p className={styles.privacy}>
             Vos données servent uniquement à traiter cette demande et sont couvertes par le secret
-            professionnel. Sur ce site de démonstration, rien n’est transmis.
+            professionnel.
           </p>
         </>
       )}

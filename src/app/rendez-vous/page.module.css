@@ -1,10 +1,3 @@
-.demoNotice {
-  margin-bottom: var(--space-6);
-  padding: var(--space-4) var(--space-5);
-  border-left: 3px solid var(--color-brass-500);
-  background: var(--color-stone-100);
-}
-
 .grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 320px;

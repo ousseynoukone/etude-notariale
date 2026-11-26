@@ -5,8 +5,7 @@ import styles from './page.module.css'
 
 export const metadata = {
   title: 'Mentions légales',
-  description:
-    'Mentions légales du site de démonstration : office fictif, coordonnées réservées à la fiction, photographies Unsplash.',
+  description: `Mentions légales du site de l’${office.name} : éditeur, hébergement, données personnelles et médiation.`,
 }
 
 export default function LegalPage() {
@@ -17,51 +16,43 @@ export default function LegalPage() {
       <PageHeader title="Mentions légales" />
 
       <Section narrow>
-        <div className={styles.notice} role="note">
-          <h2 className={styles.noticeTitle}>Site de démonstration</h2>
-          <p>
-            Ce site est une réalisation fictive, conçue dans le cadre d’une étude de cas. L’office
-            notarial, les notaires, les collaborateurs, les biens immobiliers, l’adresse et les
-            coordonnées n’existent pas. Toute ressemblance avec un office existant serait fortuite.
-          </p>
-        </div>
-
         <div className={styles.content}>
-          <h2>Coordonnées fictives</h2>
+          <h2>Éditeur du site</h2>
           <p>
-            Les numéros de téléphone utilisés appartiennent à la tranche 01 99 00 xx xx, que l’Arcep
-            réserve aux œuvres de fiction : ils ne sont attribués à aucun abonné. Les adresses
-            électroniques utilisent le domaine « .example », réservé à la documentation et aux
-            exemples ; aucun message ne peut y être distribué. Le code postal 49999 et la commune de
-            Valcourt-sur-Loire sont imaginaires.
+            {office.legalEntity}
+            <br />
+            {street}, {postalCode} {city}
+            <br />
+            Téléphone : {office.phone} · E-mail : {office.email}
+          </p>
+          <p>Directrice de la publication : Maître Claire Marceau, notaire associée.</p>
+
+          <h2>Profession réglementée</h2>
+          <p>
+            Les notaires sont des officiers publics nommés par arrêté du garde des Sceaux, ministre
+            de la Justice. Ils exercent dans le respect du règlement national de la profession et
+            sont soumis au contrôle de leur chambre départementale.
           </p>
 
-          <h2>Éditeur</h2>
-          <p>
-            {office.legalEntity}, {street}, {postalCode} {city} (éditeur fictif).
-          </p>
+          <h2>Hébergement</h2>
+          <p>Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, États-Unis.</p>
 
-          <h2>Photographies</h2>
-          <p>
-            Les photographies sont de véritables prises de vue, publiées sur Unsplash par leurs
-            auteurs et utilisées selon la licence Unsplash. Aucune image n’a été générée par un
-            outil d’intelligence artificielle. Les portraits illustrent des personnages fictifs :
-            ils ne représentent pas les personnes nommées sur ce site.
-          </p>
+          <h2>Crédits photographiques</h2>
+          <p>Unsplash.</p>
 
           <h2>Données personnelles</h2>
           <p>
-            Le formulaire de demande de rendez-vous ne transmet aucune donnée : les informations
-            saisies restent dans votre navigateur et disparaissent à la fermeture de la page. Le
-            site ne dépose aucun cookie. Les polices de caractères sont chargées depuis Google Fonts
-            et les photographies depuis Unsplash ; ces services reçoivent, comme tout serveur,
-            l’adresse IP du visiteur.
+            Les informations transmises par le formulaire de rendez-vous servent uniquement à
+            traiter votre demande. Elles sont couvertes par le secret professionnel et ne sont
+            jamais cédées à des tiers. Vous pouvez demander leur consultation, leur rectification ou
+            leur suppression en écrivant à {office.email}.
           </p>
+          <p>Ce site ne dépose aucun cookie publicitaire ni de mesure d’audience.</p>
 
           <h2>Médiation</h2>
           <p>
-            Dans un office réel, le client peut saisir gratuitement le médiateur du notariat en cas
-            de litige, après une réclamation écrite restée sans réponse satisfaisante.
+            En cas de litige, après une réclamation écrite restée sans réponse satisfaisante, vous
+            pouvez saisir gratuitement le médiateur du notariat.
           </p>
         </div>
       </Section>

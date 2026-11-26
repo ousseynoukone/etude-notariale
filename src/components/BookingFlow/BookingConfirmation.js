@@ -14,17 +14,12 @@ export default function BookingConfirmation({ request, dayLabel, onReset, headin
 
   return (
     <div className={styles.confirmation}>
-      <p className={styles.demo}>
-        <strong>Démonstration.</strong> Ce site est fictif : aucune demande n’a été envoyée et
-        aucune donnée n’a quitté votre navigateur.
-      </p>
-
       <h2 ref={headingRef} tabIndex={-1} className={styles.title}>
-        Votre demande est prête
+        Votre demande a bien été enregistrée
       </h2>
       <p>
-        Sur un site réel, l’accueil de l’office confirmerait ce créneau par téléphone ou par e-mail
-        sous un jour ouvré, à l’adresse {request.email}.
+        L’accueil de l’office vous confirmera ce créneau par téléphone ou par e-mail sous un jour
+        ouvré, à l’adresse {request.email}.
       </p>
 
       <dl className={styles.summary}>

@@ -4,6 +4,12 @@ const euroFormatter = new Intl.NumberFormat('fr-FR', {
   maximumFractionDigits: 0,
 })
 
+const preciseEuroFormatter = new Intl.NumberFormat('fr-FR', {
+  style: 'currency',
+  currency: 'EUR',
+  minimumFractionDigits: 2,
+})
+
 const percentFormatter = new Intl.NumberFormat('fr-FR', {
   style: 'percent',
   minimumFractionDigits: 1,
@@ -18,6 +24,10 @@ const longDateFormatter = new Intl.DateTimeFormat('fr-FR', {
 
 export function formatEuros(amount) {
   return euroFormatter.format(amount)
+}
+
+export function formatEurosWithCents(amount) {
+  return preciseEuroFormatter.format(amount)
 }
 
 export function formatPercent(ratio) {

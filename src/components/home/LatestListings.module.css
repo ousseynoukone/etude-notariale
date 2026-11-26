@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0 var(--space-6);
+}
+
+.allLink {
+  margin-bottom: var(--space-7);
+}

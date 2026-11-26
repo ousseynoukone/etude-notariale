@@ -1,0 +1,48 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.portrait {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  margin-bottom: var(--space-5);
+  overflow: hidden;
+  background: var(--color-stone-200);
+}
+
+.portrait::after {
+  content: '';
+  position: absolute;
+  inset: var(--space-3);
+  border: 1px solid rgb(216 195 155 / 0.55);
+  pointer-events: none;
+}
+
+.photo {
+  object-fit: cover;
+  filter: saturate(0.85);
+  transition: filter var(--transition);
+}
+
+.card:hover .photo {
+  filter: saturate(1);
+}
+
+.name {
+  color: var(--color-navy-900);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.specialties {
+  margin-top: var(--space-2);
+  color: var(--color-accent);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.bio {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+}

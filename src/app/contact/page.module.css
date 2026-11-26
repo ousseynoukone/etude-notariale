@@ -1,0 +1,125 @@
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-8);
+  align-items: start;
+}
+
+.heading {
+  margin-bottom: var(--space-4);
+  color: var(--color-navy-900);
+  font-size: var(--text-xl);
+}
+
+.details .heading:not(:first-child) {
+  margin-top: var(--space-7);
+}
+
+.address {
+  margin-bottom: var(--space-5);
+  font-size: var(--text-lg);
+  font-style: normal;
+}
+
+.address strong {
+  color: var(--color-navy-900);
+  font-weight: 600;
+}
+
+.contactList,
+.accessList {
+  display: grid;
+  gap: var(--space-4);
+  margin: 0;
+}
+
+.contactList dt,
+.accessList dt {
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.contactList dd,
+.accessList dd {
+  margin: var(--space-1) 0 0;
+}
+
+.phoneRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3) var(--space-4);
+}
+
+.phone {
+  color: var(--color-navy-900);
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.phone:hover {
+  color: var(--color-accent);
+}
+
+.aside {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.hours {
+  padding: var(--space-6);
+  border: 1px solid var(--color-line);
+  background: var(--color-surface);
+}
+
+.hoursTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.hoursTable th,
+.hoursTable td {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-line);
+  vertical-align: top;
+}
+
+.hoursTable th {
+  padding-right: var(--space-4);
+  font-weight: 600;
+  text-align: left;
+}
+
+.hoursTable td {
+  color: var(--color-text-muted);
+  text-align: right;
+}
+
+.cta {
+  width: 100%;
+  margin-top: var(--space-5);
+}
+
+.media {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  background: var(--color-stone-200);
+}
+
+.photo {
+  object-fit: cover;
+}
+
+@media (max-width: 899px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-7);
+  }
+}

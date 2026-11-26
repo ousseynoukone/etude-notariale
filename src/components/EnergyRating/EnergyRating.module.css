@@ -1,0 +1,86 @@
+.ratings {
+  display: flex;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.15rem 0.55rem 0.15rem 0.45rem;
+  border-radius: var(--radius-sm);
+  color: var(--color-ink);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.label {
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  opacity: 0.85;
+}
+
+.dpeA {
+  background: #009c6d;
+}
+
+.dpeB {
+  background: #52b153;
+}
+
+.dpeC {
+  background: #78bd76;
+}
+
+.dpeD {
+  background: #f4e70f;
+}
+
+.dpeE {
+  background: #f0b50f;
+}
+
+.dpeF {
+  background: #eb8235;
+}
+
+.dpeG {
+  background: #d7221f;
+  color: var(--color-white);
+}
+
+.gesA {
+  background: #a4dbf8;
+}
+
+.gesB {
+  background: #8cb4d3;
+}
+
+.gesC {
+  background: #7792b1;
+}
+
+.gesD {
+  background: #606f8f;
+  color: var(--color-white);
+}
+
+.gesE {
+  background: #4d5271;
+  color: var(--color-white);
+}
+
+.gesF {
+  background: #393551;
+  color: var(--color-white);
+}
+
+.gesG {
+  background: #281b35;
+  color: var(--color-white);
+}
